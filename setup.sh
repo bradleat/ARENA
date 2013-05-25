@@ -28,4 +28,4 @@ sudo wget -O/etc/apt/sources.list.d/couchbase.list http://packages.couchbase.com
 sudo apt-get update
 sudo apt-get install libcouchbase2 libcouchbase-dev
 
-sudo npm install
+sudo npm install --unsafe-perm
