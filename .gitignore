@@ -5,4 +5,11 @@
 setup/
 
 # node_modules directory
-node_modules/ 
+node_modules/
+
+# Cakefile
+Cakefile
+
+# Any Javascript
+*.js
+ 
