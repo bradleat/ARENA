@@ -1,0 +1,28 @@
+# Constants
+{exec} =  require 'child_process'
+path_to_here = "PUT THE PATH TO THIS DIR HERE"
+log = '#{path_to_here}/logs'
+app = 'app.coffee'
+
+# Tasks
+
+task 'start', ->
+	logging = "-l #{log}/forever.log -o #{log}/output.log -e #{log}/error.log"
+	run "forever start -a #{logging} -c coffee #{app}"
+
+task 'stop', ->
+	run "forever stop #{app}"
+
+task 'restart', ->
+	run "forever restart #{app}"
+
+task 'watch', ->
+	run "echo watch"
+	#have this watch all our directories
+
+run = (cmd) ->
+	exec cmd, (err, output) ->
+		throw err if err
+		console.log output
+
+

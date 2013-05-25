@@ -13,7 +13,7 @@ wget http://packages.couchbase.com/releases/2.0.1/couchbase-server-enterprise_x8
 
 tar -zxf node-v0.10.8.tar.gz
 cd node-v0.10.8
-#./configure && make && sudo make install
+./configure && make && sudo make install
 
 echo "Waiting for Couchbase to download..."
 wait
