@@ -13,7 +13,8 @@
 
     },
     "scripts": {
-        "preinstall": "npm -g install forever"
+        "preinstall": "npm install -g forever",
+	"preinstall": "npm install -g coffee-script"
     },
     "engines": {
         "node": "0.10.x"

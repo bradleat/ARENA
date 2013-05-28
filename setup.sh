@@ -8,18 +8,10 @@ mkdir setup
 cd setup
 wget http://nodejs.org/dist/v0.10.8/node-v0.10.8.tar.gz
 
-sudo /etc/init.d/couchbase-server stop
-wget http://packages.couchbase.com/releases/2.0.1/couchbase-server-enterprise_x86_64_2.0.1.deb &
-
 tar -zxf node-v0.10.8.tar.gz
 cd node-v0.10.8
 ./configure && make && sudo make install
 
-echo "Waiting for Couchbase to download..."
-wait
-echo "Done waiting, installing couchbase"
-
-sudo dpkg -i couchbase-server-enterprise_x86_64_2.0.1.deb
 echo "Done, Cleaning Up"
 cd ..
 sudo rm -rf setup
