@@ -20,4 +20,7 @@ exports.Helpers = class Helpers
 			error:
 				message: err
 				debug: code
+	
+	Array_remove: (value) ->
+		@[t..t] = [] if (t = @indexOf(value)) > -1
 

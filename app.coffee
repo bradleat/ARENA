@@ -9,16 +9,17 @@ _cb.connect { }, (err, cb) ->
 		
 		@configure
 			development: =>
-				@include "./config/development.coffee"
+				@include './config/development.coffee'
 			production: =>
-				@include "./config/production.coffee"
+				@include './config/production.coffee'
 		@include './api/routes.coffee'
 		
 		cb.get 'start', (err, doc, meta) ->
 			if err
 				if (!doc)
-					doc =
-						count: 0
+					Arena = require('./api/Controllers/Arena.coffee').Controller
+					doc = new Arena().inner
+					doc.count = 0
 				else
 					throw err
 
