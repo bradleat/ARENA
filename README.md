@@ -15,6 +15,7 @@ A software suite that allows service providers to run gaming tournaments.
 8. cake start
 
 or (AT YOUR OWN RISK ON UBUNTU 12.04):
+
 1. Follow steps 2-3 above
 2. sudo ./setup.sh
 3. ???
