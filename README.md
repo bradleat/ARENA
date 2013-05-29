@@ -1,6 +1,6 @@
 # ARENA
-
-An Infrastructure as a Service solution that allows service providers to run gaming tournaments.
+WARNING: SCHOOL PROJECT, WILL NOT MATURE
+A software suite that allows service providers to run gaming tournaments.
 
 ## INSTALLATION
 
@@ -14,9 +14,10 @@ An Infrastructure as a Service solution that allows service providers to run gam
 7. vim Cakefile and update it with your current path
 8. cake start
 
-or on a fresh Ubuntu 12.04 Try (at your own RISK!)
-    setup ./setup.sh
-Then Configure Couchbase (point your browser towards  hostname:8091)
+or (AT YOUR OWN RISK ON UBUNTU 12.04):
+1. Follow steps 2-3 above
+2. sudo ./setup.sh
+3. ???
 
 
 
