@@ -5,7 +5,7 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git://github.com/bradleat/ARENA.git"
+        "url": "http://github.com/bradleat/ARENA.git"
     },
     "dependencies": {
         "zappajs": "0.4.x",
@@ -14,7 +14,7 @@
     },
     "scripts": {
         "preinstall": "npm install -g forever",
-	"preinstall": "npm install -g coffee-script"
+	    "preinstall": "npm install -g coffee-script"
     },
     "engines": {
         "node": "0.10.x"
